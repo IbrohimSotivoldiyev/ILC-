@@ -643,7 +643,8 @@ template {
 }
 @media (max-width: 500px) {
   .hero-top {
-    background-position-y: 91px;
+    background-position-y: 40px;
+    padding-bottom: 200px;
   }
   .hero__title {
     color: #262626;
@@ -666,5 +667,11 @@ template {
   }
   .hero__service {
     padding: 32px 5px;
+  }
+}
+@media (max-width: 500px) {
+  .hero-top {
+    background-position-y: 20px;
+    padding-bottom: 200px;
   }
 }/*# sourceMappingURL=main.css.map */

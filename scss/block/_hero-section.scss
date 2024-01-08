@@ -110,7 +110,8 @@ margin-bottom: 16px;
 }
 @media(max-width:500px){
     .hero-top{
-        background-position-y: 91px;
+        background-position-y: 40px;
+        padding-bottom: 200px;
     
     }
 .hero__title{
@@ -130,3 +131,11 @@ margin-bottom: 16px;
     padding: 32px 5px;
 }
 }
+
+ 
+@media(max-width:500px){
+    .hero-top{
+        background-position-y: 20px;
+        padding-bottom: 200px;
+    
+    }}
