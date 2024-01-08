@@ -1,0 +1,135 @@
+.site-header{
+    padding: 56px 0 120px;
+}
+.header__logo-inner-wrap{
+    @include display($space:start);
+    margin-bottom: 48px;
+    
+    
+}
+.header__top-text-wrapper{
+   width: 227px;
+   margin-left: 64px;  
+}
+.header__top-text{
+     @include textStyle()
+}
+.navbar__list{
+     @include display($space:start);
+     gap: 48px;
+}
+.navbar__link{
+    transition: 0.3s linear;
+     @include textStyle($color:#000, $fontSize:16px, $fontWeight:700);
+     &:hover{
+        @include textStyle($color:#273895 , $fontSize:16px , $fontWeight:700);
+     }
+}
+.header{
+     @include display();
+}
+.contact{
+    @include display($items:center);
+    gap: 36px;
+}
+.contact__phone{
+    transition: color 0.4s linear;
+    @include textStyle($fontSize:16px, $fontWeight:700, $lineHeight:18px);
+    &:hover{
+        color: #273895 ;
+    }
+}
+.contact__sign-in{
+    transition: opacity 0.4s linear;
+     @include button();
+     &:hover{
+         opacity: 0.8;
+     }
+}
+.contact__hamburger-btn{
+  
+    
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #DEE6EF ;
+    border-radius: 7px;
+    @include display($items:center, $space:center);
+    display: none;
+   
+  
+}
+.contact__mobile-btn{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background: linear-gradient(326deg, #2641D1 11.53%, #3333A3 74.32%);
+    @include display($items:center, $space:center);
+    display: none;
+
+
+}
+
+@media (max-width:947px) {
+    .navbar__list{
+        gap: 30px;
+    }
+    .header{
+        
+    }
+    
+}
+@media (max-width:845px) {
+ .header__navbar{
+    display: none;
+ }
+.header__logo-inner-wrap{
+    margin-bottom: 0;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    flex-shrink: 0;
+
+}
+.header__top-text{
+    display: none;
+}
+.contact__hamburger-btn{
+    display: block;
+}
+    
+}
+ 
+@media (max-width:703px) {
+    .site-header{
+        padding: 22px 0 48px;
+    }
+     .contact__phone, .contact__sign-in{
+        display: none;
+     }
+     
+  .contact__mobile-btn{
+    display: block;
+  }
+   .contact{
+    gap: 8px
+    ;
+   }
+  
+   }
+    
+   @media (max-width:352px) {
+ 
+
+     
+     .header__logo-link{
+        width: 60px;
+        height: 20px;
+        flex-shrink: 0;
+    
+    }
+
+  
+   }
+    
